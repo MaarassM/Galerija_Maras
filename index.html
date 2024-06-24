@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #14161F;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .player-card {
+            background-color: #273234;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            max-width: 100%;
+            transition: transform 0.3s;
+        }
+        .player-card:hover {
+            transform: translateY(-10px);
+        }
+        .player-image {
+            width: 100%;
+            height: auto;
+        }
+        .player-info {
+            padding: 20px;
+        }
+        .player-info h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            color: #E6FF2B;
+        }
+        .player-info p {
+            margin: 5px 0;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        header {
+            background-color: #273234;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>FootballGalaxy</h1></header>
+    <div class="container">
+        <div class="player-card"><a href="https://en.wikipedia.org/wiki/Pel%C3%A9">
+            <img src="pele.jpg" alt="" class="player-image">
+            <div class="player-info">
+                <h2>Pele</h2>
+                <p>Država: Brazil</p>
+                <p>Golovi: 1281</p>
+                <p>Utakmice: 1363</p>
+            </div>
+        </a>
+        </div>
+        <div class="player-card"><a href="https://en.wikipedia.org/wiki/Diego_Maradona">
+            <img src="maradona.jpg" alt="" class="player-image">
+            <div class="player-info">
+                <h2>Diego Maradona</h2>
+                <p>Država: Argentina</p>
+                <p>Golovi: 312</p>
+                <p>Utakmice: 588</p>
+            </div>
+        </a>
+        </div>
+        <div class="player-card"><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">
+            <img src="ronaldo.jpg" alt="" class="player-image">
+            <div class="player-info">
+                <h2>Cristiano Ronaldo</h2>
+                <p>Država: Portugal</p>
+                <p>Golovi: 783</p>
+                <p>Utakmice: 1100+</p>
+            </div>
+        </a>
+        </div>
+        <div class="player-card"><a href="https://en.wikipedia.org/wiki/Lionel_Messi">
+            <img src="messi.jpg" alt="" class="player-image">
+            <div class="player-info">
+                <h2>Lionel Messi</h2>
+                <p>Država: Argentina</p>
+                <p>Golovi: 700+</p>
+                <p>Utakmice: 850+</p>
+            </div>
+        </a>
+        </div>
+    </div>
+</body>
+</html>
